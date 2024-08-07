@@ -797,7 +797,7 @@ function loadNewData(data) {
         for (let message in dailyMessages) checkMessages(message);
         showNextInQueue();
     } catch (err) {
-        window.alert(`DATA CORRUPTION DETECTED, CONTACT A MODERATOR IN THE DISCORD, ${err}, ${console.log(err)}`);
+        // window.alert(`DATA CORRUPTION DETECTED, CONTACT A MODERATOR IN THE DISCORD, ${err}, ${console.log(err)}`);
     }
 }
 function applyStopOnRareData() {
@@ -898,6 +898,6 @@ function saveNewData(obj) {
         if (obj.return) return data;
     } catch (err) {
         console.log(err);
-        window.alert(`DATA CORRUPTION DETECTED, CONTACT A MODERATOR IN THE DISCORD, ${err}`);
+        // window.alert(`DATA CORRUPTION DETECTED, CONTACT A MODERATOR IN THE DISCORD, ${err}`);
     }
 }
